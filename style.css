@@ -12,7 +12,7 @@
 body {
     display: flex;
     flex-direction: column; 
-    padding: 0 10px;
+    padding: 0.5%;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -25,7 +25,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,13 +35,13 @@ header {
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 700;
     color: #000; 
 }
 
 header .theme-toggle {
-    font-size: 20px;
+    font-size: 1.5rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -154,8 +154,8 @@ body.dark-theme .content button:hover {
 
 /* Common styles for both themes */
 .wrapper {
-    width: 700px;
-    padding: 35px;
+    width: 90%; 
+    max-width: 700px;
     border-radius: 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
     margin-top: 60px; 
@@ -223,7 +223,7 @@ body.dark-theme .content button:hover {
 }
 
 .content-box .content {
-    margin-top: 17px;
+    margin-top: 1rem;
     display: flex;
     padding: 12px 0;
     flex-wrap: wrap;
@@ -235,7 +235,10 @@ body.dark-theme .content button:hover {
 .content button {
     outline: none;
     border: none;
-    width: 105px;
+    width: auto;
+    flex: 1;
+    max-width: 150px;
+    margin: 5px;
     color: #007acc;
     padding: 8px 0;
     font-size: 17px;
@@ -324,7 +327,10 @@ body.dark-theme footer {
 /* Adjust for mobile */
 @media (max-width: 745px) {
     .wrapper {
-        padding: 20px;
+        padding: 20px 5%;
+    }
+    header h1 {
+        font-size: 1.5rem; 
     }
 
     .content-box .content {
@@ -341,10 +347,8 @@ body.dark-theme footer {
     }
 
     .content button {
-        width: 100%;
-        font-size: 15px;
-        padding: 10px 0;
-        margin-top: 20px;
+        width: 100%; 
+        font-size: 1rem; 
     }
 
     .content .result-details {
@@ -364,18 +368,10 @@ body.dark-theme footer {
 
 @media (max-width: 518px) {
     .wrapper .content-box {
-        padding: 10px 15px 0;
+        padding: 10px 5%; 
     }
 
     .typing-text p {
-        font-size: 13px;
-    }
-
-    .result-details li {
-        margin-bottom: 10px;
-    }
-
-    .content button {
-        margin-top: 10px;
+        font-size: 1rem; 
     }
 }
